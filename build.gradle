@@ -1,0 +1,16 @@
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'idea'
+
+project.buildDir = 'target'
+version = '0.1'
+mainClassName = System.getProperty("mainClassName") ?: "javax.swing.MultilineTooltipExample"
+
+jar {
+    destinationDir = project.buildDir
+}
+
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+}
