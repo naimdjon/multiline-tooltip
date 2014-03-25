@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.awt.*;
 
 /**
@@ -9,10 +10,10 @@ public class MultilineTooltipExample {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                JFrame frame=new JFrame("Tooltip");
+                JFrame frame = new JFrame("Tooltip");
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.setLocationRelativeTo(null);
-                JLabel label=new JLabel("Mouse over me!"){
+                JLabel label = new JLabel("Mouse over me!") {
                     @Override
                     public JToolTip createToolTip() {
                         return new MultiLineToolTip();
@@ -23,7 +24,7 @@ public class MultilineTooltipExample {
                         "More text here\n" +
                         "and more...");
                 frame.getContentPane().add(label);
-                frame.setPreferredSize(new Dimension(600,400));
+                frame.setPreferredSize(new Dimension(600, 400));
                 frame.pack();
                 frame.setVisible(true);
             }
