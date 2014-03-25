@@ -4,7 +4,7 @@ apply plugin: 'idea'
 
 project.buildDir = 'target'
 version = '0.1'
-mainClassName = System.getProperty("mainClassName") ?: "javax.swing.MultilineTooltipExample"
+mainClassName = System.getProperty("mainClassName") ?: "Example"
 
 jar {
     destinationDir = project.buildDir

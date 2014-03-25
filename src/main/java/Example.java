@@ -4,7 +4,7 @@ import java.awt.*;
 /**
  * @author Naimdjon Takhirov
  */
-public class MultilineTooltipExample {
+public class Example {
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
