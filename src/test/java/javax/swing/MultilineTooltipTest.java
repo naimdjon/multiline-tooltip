@@ -3,6 +3,7 @@ package javax.swing;
 import org.junit.Before;
 import org.junit.Test;
 
+import javax.swingx.MultiLineToolTip;
 import java.awt.*;
 
 import static junit.framework.TestCase.assertEquals;
