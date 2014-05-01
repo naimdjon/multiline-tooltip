@@ -16,7 +16,7 @@ public class Example {
     }
 
     private static void showGUI() {
-        final JFrame frame = createFrame();
+        final JFrame frame = createDefaultFrame();
         final JLabel label = new JLabel("Mouse over me!") {
             @Override
             public JToolTip createToolTip() {
@@ -31,14 +31,14 @@ public class Example {
         displayFrame(frame);
     }
 
-    private static JFrame createFrame() {
+    private static JFrame createDefaultFrame() {
         final JFrame frame = new JFrame("Tooltip");
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setLocationRelativeTo(null);
         return frame;
     }
 
-    private static void displayFrame(JFrame frame) {
+    private static void displayFrame(final JFrame frame) {
         frame.setPreferredSize(new Dimension(600, 400));
         frame.pack();
         frame.setVisible(true);
