@@ -1,7 +1,7 @@
 Multiline-tooltip
 =================
 
-Multiline-tooltip demo in java. Example of usage:
+Multiline-tooltip demo in `java`. Example of usage:
 
      JLabel label = new JLabel("Example label with multiple lines") {
                     @Override
